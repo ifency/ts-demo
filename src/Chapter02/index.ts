@@ -1,7 +1,7 @@
 import { HtmlHandler } from "./Markdown";
 
-export default new HtmlHandler().TextChangeHandler(
-  "markdown",
-  "markdown-output"
-);
-console.log("hello");
+const markdownParser = new HtmlHandler();
+
+markdownParser.TextChangeHandler("markdown", "markdown-output");
+
+export default markdownParser;
