@@ -3,8 +3,6 @@ import { TagType } from "./Type";
 class TagTypeToHtml {
   private readonly tagType: Map<TagType, string> = new Map<TagType, string>();
   constructor() {
-    console.log("TagTypeToHeml has inited");
-
     this.tagType.set(TagType.Header1, "h1");
     this.tagType.set(TagType.Header2, "h2");
     this.tagType.set(TagType.Header3, "h3");

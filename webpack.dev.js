@@ -59,7 +59,6 @@ const mainHtml = {
 config.plugins.push(new HtmlWebpackPlugin(mainHtml));
 getEntry().forEach((item) => {
   const key = item.slice(item.indexOf("/") + 1);
-  console.log("🚀 ~ file: webpack.dev.js ~ line 61 ~ getEntry ~ key", key);
   config.plugins.push(
     new HtmlWebpackPlugin({
       filename: `${key}.html`,
